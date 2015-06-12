@@ -13,3 +13,4 @@ class RollResource(ModelResource):
 class UserResource(ModelResource):
     class Meta:
         queryset = User.objects.all()
+        fields = ['username', 'first_name', 'last_name']
