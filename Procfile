@@ -1,0 +1,1 @@
+web: cd d20s/ && gunicorn d20s.wsgi --log-file -
