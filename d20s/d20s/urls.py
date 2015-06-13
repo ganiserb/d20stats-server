@@ -18,6 +18,7 @@ from django.contrib import admin
 
 from tastypie.api import Api
 from registrator.api import RollResource, UserResource
+from registrator.views import crossdomain
 
 v1_api = Api(api_name='v1')
 v1_api.register(UserResource())
@@ -25,5 +26,6 @@ v1_api.register(RollResource())
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^api/', include(v1_api.urls))
+    url(r'^api/', include(v1_api.urls)),
+    url(r'^crossdomain.xml$', crossdomain)
 ]

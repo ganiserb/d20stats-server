@@ -12,5 +12,5 @@ class RollResource(ModelResource):
 
 class UserResource(ModelResource):
     class Meta:
-        queryset = User.objects.all()
+        queryset = User.objects.filter(is_superuser=False)
         fields = ['username', 'first_name', 'last_name']
