@@ -11,7 +11,7 @@ def crossdomain(request):
 <!DOCTYPE cross-domain-policy
   SYSTEM 'http://www.adobe.com/xml/dtds/cross-domain-policy.dtd'>
 <cross-domain-policy>
-	<allow-access-from domain="ucseapijuegos.herokuapp.com"/>
-	<allow-http-request-headers-from domain="ucseapijuegos.herokuapp.com" headers="Authorization"/>
+	<allow-access-from domain="d20s.herokuapp.com"/>
+	<allow-http-request-headers-from domain="d20s.herokuapp.com" headers="Authorization"/>
 </cross-domain-policy>
 """)
